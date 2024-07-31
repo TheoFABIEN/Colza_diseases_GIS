@@ -20,7 +20,7 @@ python3 -m streamlit-run risk-maps.py
 
 **RPG_Sub_Region_Selector.py**: See step 1) of the project.
 
-**risk_maps.py**: see streamlit app.
+**streamlit_app.py**: see streamlit app.
 
 **Diffusion.py**: Apply convolution to each shapefile of the dataset and compute all the metrics relative to the shapefile, its equivalent for the upcoming year, their contingency and the risks of infection. 
 Can optionally perform sensitivity analysis and random shuffling of the colza fields at year n+1. At the end, everything is put in a big .csv file which can be found in the same location as the dataset. 
