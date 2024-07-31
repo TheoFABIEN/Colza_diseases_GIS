@@ -16,20 +16,20 @@ In the project repository, use the following command to launch it:
 python3 -m streamlit-run risk-maps.py
 ```
 ### FILE STRUCTURE
-utils: contains all utilitary files, each containing custom functions and classes used in the project.
+**utils**: contains all utilitary files, each containing custom functions and classes used in the project.
 
-RPG_Sub_Region_Selector.py: See step 1) of the project.
+**RPG_Sub_Region_Selector.py**: See step 1) of the project.
 
-risk_maps.py: see streamlit app.
+**risk_maps.py**: see streamlit app.
 
-metrics_between_regions.py: computes large-scale metrics and corresponding boxplots. This is used to compare tendencies between different studied regions.
+**metrics_between_regions.py**: computes large-scale metrics and corresponding boxplots. This is used to compare tendencies between different studied regions.
 
-Diffusion.py: Apply convolution to each shapefile of the dataset and compute all the metrics relative to the shapefile, its equivalent for the upcoming year, their contingency and the risks of infection. 
+**Diffusion.py**: Apply convolution to each shapefile of the dataset and compute all the metrics relative to the shapefile, its equivalent for the upcoming year, their contingency and the risks of infection. 
 Can optionally perform sensitivity analysis and random shuffling of the colza fields at year n+1. At the end, everything is put in a big .csv file which can be found in the same location as the dataset. 
 
-tests.ipynb: Notebook displaying basic operations and results used repeatedly in this project.
+**tests.ipynb**: Notebook displaying basic operations and results used repeatedly in this project.
 
-Conversion_Codes_Cultures.csv: data table used for creating the "CodeAgg" column in GeoDataFrames. The goal of this is to group the crops under different types (Colza (crops of interest), Annual crops, Perennial crops). You will see this table called in the RPG_Sub_Region_Selector file.
+**Conversion_Codes_Cultures.csv**: data table used for creating the "CodeAgg" column in GeoDataFrames. The goal of this is to group the crops under different types (Colza (crops of interest), Annual crops, Perennial crops). You will see this table called in the RPG_Sub_Region_Selector file.
 
 ### REQUIREMENTS
 Requirements are not known to be version-sensitive for now. They can be installed normally with pip or conda.
