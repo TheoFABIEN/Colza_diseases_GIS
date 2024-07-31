@@ -332,7 +332,7 @@ if __name__ == '__main__':
 #                           GENERAL PARAMETERS  
 #==============================================================================
        
-    RESOLUTION = 10  # Downgrade value i.e. length of a pixel in the raster (m)
+    RESOLUTION = 5  # Downgrade value i.e. length of a pixel in the raster (m)
     
 
 #==============================================================================
@@ -346,7 +346,7 @@ if __name__ == '__main__':
    
     print(f"analysis: {analysis}")
     
-    NUM_SEEDS = 5    # For analysis 2 or 3
+    NUM_SEEDS = 10    # For analysis 2 or 3
 
 #_____Sensitivity analysis_____________________________________________________
     if analysis == '3':           
@@ -359,7 +359,7 @@ if __name__ == '__main__':
             [.2, 1.8],          # Range for Beta 2
             [.1, .5]            # Proportion of colza fields sampled randomly
         ])
-        SAMPLE_SIZE = 12 
+        SAMPLE_SIZE = 36 
         parameters = utils.scaled_latin_hypercube(
             parameters_ranges,
             sample_size = SAMPLE_SIZE 
